@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 2c9b50606036fab4abc35ca4694df78c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -126,6 +126,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 10, y: 0, z: 10}
-  startSpeed: {x: 0, y: 0, z: 0}
   resetPosition: {x: 0, y: 0, z: 0}
+  gawang1: {fileID: 0}
+  gawang2: {fileID: 0}
+  gawang3: {fileID: 0}
+  gawang4: {fileID: 0}
+  manager: {fileID: 0}
+  ScoreManager: {fileID: 0}
   maxSpeed: 10

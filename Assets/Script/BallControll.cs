@@ -13,6 +13,8 @@ public class BallControll : MonoBehaviour
     public Collider gawang4;
     public SpawnManager manager;
     public ScoreManager ScoreManager;
+    public GameObject hitFSX;
+    public GameObject GoalFSX;
 
     private void Start()
     {
@@ -29,6 +31,7 @@ public class BallControll : MonoBehaviour
             {
                 rig.velocity = rig.velocity.normalized * maxSpeed;
             }
+            Instantiate(hitFSX, transform.position, transform.rotation);
         }
     }
 
@@ -54,5 +57,6 @@ public class BallControll : MonoBehaviour
             ScoreManager.AddScoreplayerAtas(1);
             manager.RemoveBall(gameObject);
         }
+        Instantiate(GoalFSX, transform.position, transform.rotation);
     }
 }

@@ -7,17 +7,17 @@ public class MainMenuControl : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Gameplay");
+        SceneManager.LoadScene("Gameplay", LoadSceneMode.Single);
     }
 
     public void HowToPlay()
     {
-        SceneManager.LoadScene("HowToPlay");
+        SceneManager.LoadScene("HowToPlay", LoadSceneMode.Single);
     }
 
     public void BackMainMenu()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Main Menu", LoadSceneMode.Single);
     }
 
     public void QuitGame()
